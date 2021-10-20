@@ -1,0 +1,75 @@
+main {
+    padding: 3em 1em;
+    display: grid;
+    grid-auto-rows: 400px auto;
+}
+
+.bottom-wrapper {
+    position: absolute;
+    top: 470px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: var(--gradient);
+    z-index: 10000;
+    height: 1000px;
+    padding: 3em 1em;
+}
+
+.Top--wrapper {
+    @include flex-1;
+
+    .info--wrapper {
+        margin: 1.5em 0 0 0;
+        @include flex-2;
+
+        h1 {
+            font-size: 1.5rem;
+            color: var(--text);
+            margin: 0 0 4px 0;
+
+        }
+
+        p {
+            font-size: 1rem;
+            color: var(--text);
+        }
+    }
+}
+
+.button--wrapper {
+    position: absolute;
+    top: -10px;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#get-in-touch {
+    @include medium-button;
+    background-color: var(--buttonBackground);
+    color: var(--buttonText);
+    border-radius: 50px;
+    min-width: 198px;
+    height: 48px;
+    font-family: var(--font);
+    font-weight: 500;
+  
+
+}
+
+.project--wrapper {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    margin: 0 0 24px 0;
+}
+.inner--wrapper {
+    display: grid;
+    grid-template-columns: 48px auto;
+    gap: 1em;
+    align-items: center;
+    color: var(--text);
+}
