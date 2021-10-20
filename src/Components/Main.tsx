@@ -8,8 +8,8 @@ const Main = () => {
   return (
     <div className="outer--wrapper">
       <main id="main">
-        <BottomWrap y={y} />
         <TopComp y={y} />
+        <BottomWrap y={y} />
       </main>
     </div>
   );

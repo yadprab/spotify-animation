@@ -11,7 +11,7 @@ const BottomWrap = ({ y }: { y: MotionValue<any> }) => {
       drag="y"
       dragConstraints={{ top: -1080, bottom: 0 }}
       dragElastic={0.5}
-      
+      transition={{ duration: 1.5 }}
      
     >
       <ButtonComp />
